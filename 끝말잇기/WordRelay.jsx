@@ -1,12 +1,17 @@
-import React from 'react';
 
-class WordRelay extends React.Component {
-  state = {
+import React from 'react'
 
-  };
-  render() {
+function WordRelay() {
+  return (
+    <div>
+      <div>WordRelay</div>
+      <div>WordRelay2</div>
+      <div>WordRelay2</div>
 
-  }
+
+    </div>
+
+  )
 }
 
-module.exports = WordRelay;
+export default WordRelay

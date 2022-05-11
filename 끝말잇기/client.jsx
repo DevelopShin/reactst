@@ -1,5 +1,13 @@
-const React = require('react');
-const WordRelay = require('./WordRelay')
-const ReactDOM = require('react-dom');
+import React, { StrictMode } from 'react';
+// const ReactDOM = require('react-dom');
+import {createRoot} from 'react-dom/client';
+import WordRelay from './WordRelay'
 
-ReactDOM.render(<WordRelay/>, document.getElementById("#root"));
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+root.render(
+  <StrictMode>
+    <WordRelay/>
+  </StrictMode>
+)
+// ReactDOM.render(<WordRelay/>, document.getElementById("#root"));
